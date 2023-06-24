@@ -12,6 +12,22 @@
   <% end %>
 
   <div>
+    <div>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+    <div>
+      <%= form.label :age %>
+      <%= form.number_field :age, in: 0..42, step: 1 %>
+    </div>
+    <div>
+      <%= form.label :cuteness %>
+      <%= form.check_box :cuteness %>
+    </div>
+    <div>
+      <%= form.label :softness %>
+      <%= form.check_box :softness %>
+    </div>
     <%= form.submit %>
   </div>
 <% end %>
