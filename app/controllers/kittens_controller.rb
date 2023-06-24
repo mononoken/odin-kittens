@@ -1,5 +1,5 @@
 class KittensController < ApplicationController
-  before_action :set_kitten, only: %i[ show edit update destroy ]
+  before_action :set_kitten, only: %i[show edit update destroy]
 
   # GET /kittens or /kittens.json
   def index
@@ -58,13 +58,14 @@ class KittensController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_kitten
-      @kitten = Kitten.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def kitten_params
-      params.fetch(:kitten, {})
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_kitten
+    @kitten = Kitten.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def kitten_params
+    params.fetch(:kitten, {})
+  end
 end

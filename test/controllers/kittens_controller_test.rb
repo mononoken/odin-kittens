@@ -17,7 +17,7 @@ class KittensControllerTest < ActionDispatch::IntegrationTest
 
   test "should create kitten" do
     assert_difference("Kitten.count") do
-      post kittens_url, params: { kitten: {  } }
+      post kittens_url, params: {kitten: {}}
     end
 
     assert_redirected_to kitten_url(Kitten.last)
@@ -34,7 +34,7 @@ class KittensControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update kitten" do
-    patch kitten_url(@kitten), params: { kitten: {  } }
+    patch kitten_url(@kitten), params: {kitten: {}}
     assert_redirected_to kitten_url(@kitten)
   end
 
