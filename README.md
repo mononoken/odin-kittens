@@ -1,10 +1,6 @@
 # # Odin Kittens
 
-![A screenshot showing a preview of the project.](screenshot.png "Project Preview")
-
 This project is an exercise that aims to teach creating a simple API with Rails.
-
-[Click here to see a live-preview hosted on Github).](https://mononoken.github.io/<project_link>/)
 
 ## Table of Contents
 
@@ -14,7 +10,9 @@ This project is an exercise that aims to teach creating a simple API with Rails.
 
 ## General Information
 
-tl
+In this project, we create a `Kitten` model and `KittensController` for all 7 RESTful actions. We setup the routing and views for these actions.
+
+Rails makes it easy to return either HTML or JSON depending on the request. We setup our `KittensController` to be able to return JSON for the `#index` and `#show` routes. We now have a simple API where users can request information from our app.
 
 ## Acknowledgements
 
