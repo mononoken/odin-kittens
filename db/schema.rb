@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_24_062040) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_24_063806) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "kittens", force: :cascade do |t|
     t.string "name"
     t.integer "age"
-    t.boolean "cuteness"
-    t.boolean "softness"
+    t.boolean "cuteness", default: true, null: false
+    t.boolean "softness", default: true, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
